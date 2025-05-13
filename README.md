@@ -1,9 +1,14 @@
 # Statistical Laws Demonstration
 
-This project demonstrates fundamental statistical laws through numerical experiments using a uniform distribution:
+This project demonstrates fundamental statistical laws through numerical experiments using various probability distributions:
 
 1. **Law of Large Numbers**: Shows how the sample proportion converges to the theoretical probability as the sample size increases
 2. **Central Limit Theorem**: Illustrates how the distribution of sample means approaches a normal distribution regardless of the original distribution
+   - Verification with uniform distribution (symmetric)
+   - Verification with exponential distribution (asymmetric)
+   - Verification with chi-square distribution (asymmetric)
+   - Verification with Pareto distribution (strongly asymmetric)
+   - Comparison of different asymmetric distributions
 
 ## Problem Statement
 
@@ -79,6 +84,8 @@ This will generate a graph showing multiple runs and their average, along with s
 
 The central limit theorem states that the distribution of sample means approximates a normal distribution as the sample size gets larger, regardless of the population's distribution.
 
+### Verification with Uniform Distribution
+
 The script `central_limit_theorem.py` demonstrates this by:
 - Generating samples from a uniform distribution U[0,1]
 - Calculating the mean of each sample for different sample sizes (n = 1, 2, 5, 10, 30, 100)
@@ -93,10 +100,76 @@ The results show that:
 
 The standard deviation of the sample means follows the theoretical formula σ/√n, where σ is the standard deviation of the original distribution.
 
-## Running the Central Limit Theorem Demo
+### Verification with Asymmetric Distributions
+
+The following scripts verify that the central limit theorem holds for asymmetric distributions as well:
+
+#### Exponential Distribution
+
+The script `central_limit_theorem_exponential.py`:
+- Generates samples from an exponential distribution
+- Calculates the mean of each sample for different sample sizes (n = 1, 2, 5, 10, 30, 50, 100)
+- Plots the distribution of these sample means
+- Compares the actual distribution with the theoretical normal distribution
+
+#### Chi-Square Distribution
+
+The script `central_limit_theorem_chi2.py`:
+- Generates samples from a chi-square distribution
+- Calculates the mean of each sample for different sample sizes (n = 1, 2, 5, 10, 30, 50, 100)
+- Plots the distribution of these sample means
+- Compares the actual distribution with the theoretical normal distribution
+
+#### Pareto Distribution
+
+The script `central_limit_theorem_pareto.py`:
+- Generates samples from a Pareto distribution (with strong asymmetry and heavy tails)
+- Calculates the mean of each sample for different sample sizes (n = 1, 2, 5, 10, 30, 50, 100)
+- Plots the distribution of these sample means
+- Compares the actual distribution with the theoretical normal distribution
+
+#### Comparison of Different Asymmetric Distributions
+
+The script `central_limit_theorem_comparison.py`:
+- Compares three asymmetric distributions: exponential, chi-square, and Pareto
+- Shows distributions for small (n = 1), medium (n = 10), and large (n = 100) sample sizes
+- Examines the relationship between the strength of asymmetry and the rate of convergence to normality
+
+These experiments confirm that:
+- The distribution of sample means approaches a normal distribution as the sample size increases, regardless of the asymmetry of the original distribution
+- The stronger the asymmetry of the original distribution, the larger the sample size needed for convergence to normality
+- Distributions like exponential and chi-square converge to normality with relatively small sample sizes (around n = 30), while distributions with stronger asymmetry like Pareto require larger sample sizes
+
+## Running the Central Limit Theorem Demos
+
+### Uniform Distribution Demo
 
 ```bash
 python central_limit_theorem.py
+```
+
+### Exponential Distribution Demo
+
+```bash
+python central_limit_theorem_exponential.py
+```
+
+### Chi-Square Distribution Demo
+
+```bash
+python central_limit_theorem_chi2.py
+```
+
+### Pareto Distribution Demo
+
+```bash
+python central_limit_theorem_pareto.py
+```
+
+### Comparison of Different Distributions
+
+```bash
+python central_limit_theorem_comparison.py
 ```
 
 ## Combined Demonstration
