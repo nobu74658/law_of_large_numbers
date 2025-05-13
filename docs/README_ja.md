@@ -138,61 +138,49 @@
 ### 単一実験（大数の法則）
 
 ```bash
-python src/law_of_large_numbers.py
+python law_of_large_numbers.py
 ```
 
 ### 複数実験（大数の法則）
 
 ```bash
-python src/law_of_large_numbers_multiple_runs.py
+python law_of_large_numbers_multiple_runs.py
 ```
 
 ### 中心極限定理のデモ（一様分布）
 
 ```bash
-python src/central_limit_theorem.py
+python central_limit_theorem.py
 ```
 
 ### 中心極限定理のデモ（指数分布）
 
 ```bash
-python src/central_limit_theorem_exponential.py
+python central_limit_theorem_exponential.py
 ```
 
 ### 中心極限定理のデモ（カイ二乗分布）
 
 ```bash
-python src/central_limit_theorem_chi2.py
+python central_limit_theorem_chi2.py
 ```
 
 ### 中心極限定理のデモ（パレート分布）
 
 ```bash
-python src/central_limit_theorem_pareto.py
+python central_limit_theorem_pareto.py
 ```
 
 ### 中心極限定理のデモ（異なる分布の比較）
 
 ```bash
-python src/central_limit_theorem_comparison.py
+python central_limit_theorem_comparison.py
 ```
 
 ### 組み合わせデモ
 
 ```bash
-python src/combined_demonstration.py
-```
-
-## プロジェクト構成
-
-プロジェクトは以下のように構成されています：
-
-```
-law_of_large_numbers/
-├── docs/           # ドキュメントファイル
-├── images/         # 実験から生成された画像
-├── src/            # ソースコード
-└── run_all_demos.py  # すべてのデモンストレーションを実行するスクリプト
+python combined_demonstration.py
 ```
 
 ### すべてのデモンストレーションを実行

@@ -65,7 +65,7 @@ The multiple runs experiment provides additional insights:
 To run the single experiment:
 
 ```bash
-python src/law_of_large_numbers.py
+python law_of_large_numbers.py
 ```
 
 This will generate a graph showing the convergence of the win rate to the theoretical probability.
@@ -75,7 +75,7 @@ This will generate a graph showing the convergence of the win rate to the theore
 To run multiple experiments and see the variation between runs:
 
 ```bash
-python src/law_of_large_numbers_multiple_runs.py
+python law_of_large_numbers_multiple_runs.py
 ```
 
 This will generate a graph showing multiple runs and their average, along with statistics about the standard deviation at each sample size.
@@ -145,31 +145,31 @@ These experiments confirm that:
 ### Uniform Distribution Demo
 
 ```bash
-python src/central_limit_theorem.py
+python central_limit_theorem.py
 ```
 
 ### Exponential Distribution Demo
 
 ```bash
-python src/central_limit_theorem_exponential.py
+python central_limit_theorem_exponential.py
 ```
 
 ### Chi-Square Distribution Demo
 
 ```bash
-python src/central_limit_theorem_chi2.py
+python central_limit_theorem_chi2.py
 ```
 
 ### Pareto Distribution Demo
 
 ```bash
-python src/central_limit_theorem_pareto.py
+python central_limit_theorem_pareto.py
 ```
 
 ### Comparison of Different Distributions
 
 ```bash
-python src/central_limit_theorem_comparison.py
+python central_limit_theorem_comparison.py
 ```
 
 ## Combined Demonstration
@@ -188,19 +188,7 @@ The script `combined_demonstration.py` provides a comprehensive visualization of
 ### Running the Combined Demo:
 
 ```bash
-python src/combined_demonstration.py
-```
-
-## Project Structure
-
-The project is organized as follows:
-
-```
-law_of_large_numbers/
-├── docs/           # Documentation files
-├── images/         # Generated images from the experiments
-├── src/            # Source code
-└── run_all_demos.py  # Script to run all demonstrations
+python combined_demonstration.py
 ```
 
 ## Running All Demonstrations

@@ -68,7 +68,7 @@ def main():
     plt.ylim(0.3, 0.5)
     
     # グラフの保存
-    plt.savefig('law_of_large_numbers.png')
+    plt.savefig('../images/law_of_large_numbers.png')
     
     # グラフの表示
     plt.show()

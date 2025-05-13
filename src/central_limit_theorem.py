@@ -113,7 +113,7 @@ def plot_sample_means_distribution(sample_sizes, num_experiments=10000):
         fig.delaxes(axes[row, col])
     
     plt.tight_layout()
-    plt.savefig('central_limit_theorem.png')
+    plt.savefig('../images/central_limit_theorem.png')
     plt.show()
     
     print("\n考察:")

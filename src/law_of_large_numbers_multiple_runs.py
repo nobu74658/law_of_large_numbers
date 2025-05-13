@@ -83,7 +83,7 @@ def run_multiple_experiments(num_runs=5):
     plt.ylim(0.3, 0.5)
     
     # グラフの保存
-    plt.savefig('law_of_large_numbers_multiple_runs.png')
+    plt.savefig('../images/law_of_large_numbers_multiple_runs.png')
     
     # グラフの表示
     plt.show()

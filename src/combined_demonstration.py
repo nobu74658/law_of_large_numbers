@@ -113,7 +113,7 @@ def run_experiment(sample_sizes, num_experiments=1000):
     axes[1, 1].legend()
     
     plt.tight_layout()
-    plt.savefig('combined_demonstration.png')
+    plt.savefig('../images/combined_demonstration.png')
     plt.show()
     
     # 結果の統計情報を表示
